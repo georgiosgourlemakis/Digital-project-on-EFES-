@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+           xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+           xmlns:xi="http://www.w3.org/2001/XInclude"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <kiln:parent>
+    <xi:include href="base.xml" />
+  </kiln:parent>
+
+  <kiln:child>
+    <kiln:block name="title">
+      <i18n:text>home-title</i18n:text>
+    </kiln:block>
+
+    <kiln:block name="page-header">
+      <div class="row">
+        <div class="large-13 columns text-center">
+          <h1>
+            <span class="round label">
+              <i18n:text i18n:key="home-title"> A corpus of selected Damokrines (Δαμοκρίνης) inscriptions</i18n:text>
+            </span>
+          </h1>
+        </div>
+      </div>
+    </kiln:block>
+
+    <kiln:block name="content-section">
+      <main>
+        <div class="row">
+          <div class="small-6 large-centered columns">
+            <p>Welcome to  a digital edition of a selected syllogae of Ancient Greek inscriptions, 
+                referred   to  Rhodian Damocrines as well as  to other people: 
+            an effort of disambiguation of the connections between the island of Rhodes 
+            and other Greek islands   with the regions of Asia Minor in antiquity.
+            
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 columns">
+            <div class="panel radius">
+              <p><strong>Inscriptions from Turkey </strong></p>
+
+              <p>There is only one inscription from the place of Aphrodisias (Asia Minor) that 
+                was found there and is displayed on the current syllogae. For more information , please 
+                click below on the
+            
+              
+              (<a
+              href="{kiln:url-for-match('local-epidoc-index-display', ($language), 0)}">Inscriptions</a>) section.</p>
+            </div>
+          </div>
+          <div class="large-4 columns">
+            <div class="panel radius">
+              <p><strong>Inscriptions from Greece </strong></p>
+
+              <p> There are six inscriptions of this syllogae found in Greece; the findspot of four of them is the island of 
+                Rhodes and the location of the two of them is the island of Thera, both at Aegean sea. However, they are all  still accessible through the   (<a
+                href="{kiln:url-for-match('local-epidoc-index-display', ($language), 0)}">Inscriptions</a>) facet.
+              </p>
+            </div>
+          </div>
+          
+            
+         
+        </div>
+      </main>
+    </kiln:block>
+  </kiln:child>
+</kiln:root>
